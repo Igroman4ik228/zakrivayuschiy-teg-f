@@ -4,24 +4,44 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
-.theme-dark {
-  --main-font-family: 'Inter-Variable', Arial, sans-serif;
-  --accent-font-family: 'Press Start 2P', Arial, sans-serif;
-  --main-color: #000;
-  --text-color: #00cc14;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --main-font-family: 'Inter-Variable', Arial, sans-serif;
     --accent-font-family: 'Press Start 2P', Arial, sans-serif;
     --main-color: #000;
-    --text-color: #00cc14;
+    --accent-color: #00cc14;
+    --begin-bg-color: #007f0c;
+    --end-bg-color: #004306;
   }
 }
 
-.theme-light {}
-
 @media (prefers-color-scheme: light) {
-  :root {}
+  :root {
+    --main-font-family: 'Inter-Variable', Arial, sans-serif;
+    --accent-font-family: 'Press Start 2P', Arial, sans-serif;
+    --main-color: #fff;
+    --accent-color: #000;
+    --begin-bg-color: #e7e7e7;
+    --end-bg-color: #1a1a1a;
+  }
+}
+
+.theme-dark {
+  --main-font-family: 'Inter-Variable', Arial, sans-serif;
+  --accent-font-family: 'Press Start 2P', Arial, sans-serif;
+  --main-color: #000;
+  --accent-color: #00cc14;
+  --begin-bg-color: #007f0c;
+  --end-bg-color: #004306;
+}
+
+
+
+.theme-light {
+  --main-font-family: 'Inter-Variable', Arial, sans-serif;
+  --accent-font-family: 'Press Start 2P', Arial, sans-serif;
+  --main-color: #fff;
+  --accent-color: #000;
+  --begin-bg-color: #e7e7e7;
+  --end-bg-color: #1a1a1a;
 }

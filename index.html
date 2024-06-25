@@ -69,7 +69,10 @@
 
             <div class="card__btn-wrapper">
               <button class="card__icon-button">
-                <img class="like-icon" src="./svg/heart.svg" alt="Сердце">
+                <svg class="like-icon" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6 0H3v3h3V0ZM9 0H6v3h3V0ZM3 3H0v3h3V3ZM3 6H0v3h3V6ZM3 9H0v3h3V9ZM12 0H9v3h3V0ZM6 12H3v3h3v-3ZM9 15H6v3h3v-3ZM12 18H9v3h3v-3ZM21 0h3v3h-3V0ZM18 0h3v3h-3V0ZM24 3h3v3h-3V3ZM24 6h3v3h-3V6ZM24 9h3v3h-3V9ZM15 0h3v3h-3V0ZM21 12h3v3h-3v-3ZM18 15h3v3h-3v-3ZM15 18h3v3h-3v-3ZM15 3h-3v3h3V3ZM15 21h-3v3h3v-3Z" />
+                </svg>
               </button>
               <button class="card__like-button">
                 <span class="button__text">Like</span>
@@ -84,11 +87,11 @@
 
   <footer class="footer">
     <button class="footer__button">
-      <!-- todo: change use -->
-      <img class="footer__img" src="./svg/floppy.svg" alt="касета">
+      <svg width="21" height="21">
+        <use href="./svg/floppy.svg#floppy"></use>
+      </svg>
       <span class="footer__button-text button__text">Сохранить на память</span>
     </button>
-
   </footer>
   <script src="./scripts/like.js"></script>
 </body>

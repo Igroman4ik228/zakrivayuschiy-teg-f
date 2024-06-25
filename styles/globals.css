@@ -50,8 +50,10 @@ button:disabled {
   cursor: default;
 }
 
-img {
+img,
+svg {
   width: inherit;
+  height: inherit;
 }
 
 ul,
