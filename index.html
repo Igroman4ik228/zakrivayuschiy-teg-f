@@ -1,46 +1,96 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
-    <script src="./scripts/set-theme.js"></script>
-  </head>
-  <body class="page">
-    <header class="header">
-      <nav class="theme-menu header__theme-menu">
-        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
-        <ul class="theme-menu__list">
-          <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
-              Темно
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button
-              type="button"
-              data-theme="auto"
-              disabled
-              class="theme-menu__button"
-            >
-              Авто
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
-              Светло
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main></main>
-    <script src="./scripts/like.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <link rel="icon" href="./images/favicon/favicon.svg" type="image/svg+xml" />
+
+  <title>Закрывающий тег</title>
+  <meta name="color-scheme" content="dark light">
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+  <link rel="stylesheet" href="./styles/themes.css" />
+  <script src="./scripts/set-theme.js"></script>
+</head>
+
+<body class="page">
+
+
+
+  <header class="header">
+    <div class="header__logo-wrapper">
+      <h2 class="header__logo">&lt;/HTML&gt;</h2>
+      <h1 class="header__title">закрывающий тег</h1>
+    </div>
+
+    <nav class="theme-menu header__theme-menu">
+      <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+      <ul class="theme-menu__list">
+        <li class="theme-menu__item">
+          <button type="button" data-theme="dark" class="theme-menu__button">
+            Темно
+          </button>
+        </li>
+        <li class="theme-menu__item">
+          <button type="button" data-theme="auto" disabled class="theme-menu__button">
+            Авто
+          </button>
+        </li>
+        <li class="theme-menu__item">
+          <button type="button" data-theme="light" class="theme-menu__button">
+            Светло
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+
+  </header>
+  <main class="main">
+    <ul class="cards">
+      <li>
+        <article class="card">
+          <h3 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h3>
+          <img class="card__img" src="./images/post-zero.jpg" alt="машина">
+          <div class="card__content">
+            <div class="card__text-wrapper">
+              <p class="card__text">
+                Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И,
+                возможно, подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p class="card__text">Место для ваших воспоминаний о начале обучения.</p>
+            </div>
+
+            <div class="card__btn-wrapper">
+              <button class="card__icon-button">
+                <img class="like-icon" src="./svg/heart.svg" alt="Сердце">
+              </button>
+              <button class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+  </main>
+
+  <footer class="footer">
+    <button class="footer__button">
+      <!-- todo: change use -->
+      <img class="footer__img" src="./svg/floppy.svg" alt="касета">
+      <span class="footer__button-text button__text">Сохранить на память</span>
+    </button>
+
+  </footer>
+  <script src="./scripts/like.js"></script>
+</body>
+
 </html>

@@ -4,3 +4,24 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+.theme-dark {
+  --main-font-family: 'Inter-Variable', Arial, sans-serif;
+  --accent-font-family: 'Press Start 2P', Arial, sans-serif;
+  --main-color: #000;
+  --text-color: #00cc14;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-font-family: 'Inter-Variable', Arial, sans-serif;
+    --accent-font-family: 'Press Start 2P', Arial, sans-serif;
+    --main-color: #000;
+    --text-color: #00cc14;
+  }
+}
+
+.theme-light {}
+
+@media (prefers-color-scheme: light) {
+  :root {}
+}

@@ -37,6 +37,23 @@ input {
   font-size: inherit;
 }
 
+button {
+  border: none;
+  padding-block: 0;
+  padding-inline: 0;
+  background: none;
+  cursor: pointer;
+  text-transform: inherit;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+img {
+  width: inherit;
+}
+
 ul,
 ol {
   list-style: none;

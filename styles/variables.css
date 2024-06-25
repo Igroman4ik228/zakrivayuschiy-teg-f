@@ -1,1 +1,9 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font-family: 'Inter-Variable', Arial, sans-serif;
+  --accent-font-family: 'Press Start 2P', Arial, sans-serif;
+  --main-color: #000;
+  --accent-color: #00cc14;
+  --begin-bg-color: #007f0c;
+  --end-bg-color: #004306;
+}
