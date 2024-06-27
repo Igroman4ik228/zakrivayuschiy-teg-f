@@ -42,6 +42,7 @@
 
 :root.theme-dark {
   --main-color: #000;
+  --accent-color: #00cc14;
   --title-font-weight: 785;
   --text-font-weight: 465;
   --button-color: var(--accent-color);
