@@ -282,6 +282,8 @@
   z-index: 2;
   color: var(--button-color);
   mix-blend-mode: difference;
+  width: 21px;
+  height: 21px;
 }
 
 /* modal */
@@ -326,6 +328,11 @@
 @media (width <=376px) {
   .card__decor {
     right: 13px;
+  }
+
+  .footer__icon {
+    inline-size: 28px;
+    block-size: 28px;
   }
 
   .footer__button {
